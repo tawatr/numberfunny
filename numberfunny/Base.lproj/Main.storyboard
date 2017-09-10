@@ -10,10 +10,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--HomeController-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="numberfunny" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="HomeController" id="BYZ-38-t0r" customClass="ViewController" customModule="numberfunny" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -29,10 +29,17 @@
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="vUN-w7-bAR"/>
                                     <barButtonItem systemItem="organize" id="hcC-2e-W84"/>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="Ifz-Oy-z6a"/>
-                                    <barButtonItem systemItem="refresh" id="txo-9D-bQG"/>
+                                    <barButtonItem systemItem="refresh" id="txo-9D-bQG">
+                                        <connections>
+                                            <action selector="resetAction:" destination="BYZ-38-t0r" id="iX5-Uh-12j"/>
+                                        </connections>
+                                    </barButtonItem>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="vPB-E0-3IE"/>
-                                    <barButtonItem image="ic_transform.png" id="Ldr-Q5-wrA">
+                                    <barButtonItem systemItem="fastForward" id="Ldr-Q5-wrA">
                                         <color key="tintColor" red="0.50196081400000003" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <connections>
+                                            <segue destination="F8a-gd-LSf" kind="show" id="KoJ-9J-d8b"/>
+                                        </connections>
                                     </barButtonItem>
                                 </items>
                             </toolbar>
@@ -84,8 +91,69 @@
             </objects>
             <point key="canvasLocation" x="32.799999999999997" y="37.331334332833585"/>
         </scene>
+        <!--TimerViewController-->
+        <scene sceneID="zkk-jA-Eis">
+            <objects>
+                <viewController title="TimerViewController" id="F8a-gd-LSf" customClass="TimerViewController" customModule="numberfunny" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="d8n-rH-KkV"/>
+                        <viewControllerLayoutGuide type="bottom" id="542-t8-tx4"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="slN-9J-3sY">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JV5-d8-c5e">
+                                <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                                <items>
+                                    <navigationItem title="Timer" id="ygd-y0-yj6">
+                                        <barButtonItem key="leftBarButtonItem" image="ic_keyboard_arrow_left_2x.png" id="4cr-Yo-Wv9">
+                                            <connections>
+                                                <segue destination="BYZ-38-t0r" kind="show" id="MeG-WW-4bI"/>
+                                            </connections>
+                                        </barButtonItem>
+                                        <barButtonItem key="rightBarButtonItem" systemItem="play" id="oaW-Gy-eO4"/>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QNz-o1-oqg">
+                                <rect key="frame" x="16" y="283.5" width="343" height="100.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="84"/>
+                                <color key="textColor" red="0.50196081400000003" green="0.0" blue="0.25098040700000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="p27-AH-alW">
+                                <rect key="frame" x="0.0" y="623" width="375" height="44"/>
+                                <items>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="67S-zN-S4n"/>
+                                    <barButtonItem systemItem="stop" id="ZGf-kx-3Vi"/>
+                                </items>
+                            </toolbar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="JV5-d8-c5e" firstAttribute="top" secondItem="d8n-rH-KkV" secondAttribute="bottom" id="3Cd-WT-Bwr"/>
+                            <constraint firstAttribute="trailing" secondItem="JV5-d8-c5e" secondAttribute="trailing" id="4Ng-Lf-uxP"/>
+                            <constraint firstAttribute="trailing" secondItem="JV5-d8-c5e" secondAttribute="trailing" id="4bg-E4-A4N"/>
+                            <constraint firstItem="JV5-d8-c5e" firstAttribute="leading" secondItem="slN-9J-3sY" secondAttribute="leading" id="HA3-Yq-Z7D"/>
+                            <constraint firstItem="QNz-o1-oqg" firstAttribute="centerY" secondItem="slN-9J-3sY" secondAttribute="centerY" id="Jmd-gg-jyj"/>
+                            <constraint firstItem="QNz-o1-oqg" firstAttribute="centerX" secondItem="slN-9J-3sY" secondAttribute="centerX" id="Qpj-mq-lqC"/>
+                            <constraint firstItem="JV5-d8-c5e" firstAttribute="top" secondItem="d8n-rH-KkV" secondAttribute="bottom" id="S6s-zJ-2we"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="QNz-o1-oqg" secondAttribute="trailing" id="Wy3-uI-9J6"/>
+                            <constraint firstAttribute="trailing" secondItem="p27-AH-alW" secondAttribute="trailing" id="mK6-HZ-Mi5"/>
+                            <constraint firstItem="542-t8-tx4" firstAttribute="top" secondItem="p27-AH-alW" secondAttribute="bottom" id="uam-es-mRl"/>
+                            <constraint firstItem="JV5-d8-c5e" firstAttribute="leading" secondItem="slN-9J-3sY" secondAttribute="leading" id="wpC-bd-s4V"/>
+                            <constraint firstItem="p27-AH-alW" firstAttribute="leading" secondItem="slN-9J-3sY" secondAttribute="leading" id="y0r-P1-Fv5"/>
+                            <constraint firstItem="QNz-o1-oqg" firstAttribute="leading" secondItem="slN-9J-3sY" secondAttribute="leadingMargin" id="zN8-01-cGX"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LhA-Lh-Tz7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="812" y="37"/>
+        </scene>
     </scenes>
     <resources>
-        <image name="ic_transform.png" width="24" height="24"/>
+        <image name="ic_keyboard_arrow_left_2x.png" width="48" height="48"/>
     </resources>
 </document>

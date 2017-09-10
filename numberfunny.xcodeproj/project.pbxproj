@@ -18,6 +18,11 @@
 		5871424F1F64E0D40099AE86 /* ic_transform_3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5871424C1F64E0D40099AE86 /* ic_transform_3x.png */; };
 		587142501F64E0D40099AE86 /* ic_transform.png in Resources */ = {isa = PBXBuildFile; fileRef = 5871424D1F64E0D40099AE86 /* ic_transform.png */; };
 		587142521F64E26B0099AE86 /* matteo-vistocco-240766.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 587142511F64E26B0099AE86 /* matteo-vistocco-240766.jpg */; };
+		587142541F64FAA90099AE86 /* testclass1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 587142531F64FAA90099AE86 /* testclass1.swift */; };
+		587142561F65100C0099AE86 /* TimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 587142551F65100C0099AE86 /* TimerViewController.swift */; };
+		5871425A1F65139A0099AE86 /* ic_keyboard_arrow_left_2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 587142571F65139A0099AE86 /* ic_keyboard_arrow_left_2x.png */; };
+		5871425B1F65139A0099AE86 /* ic_keyboard_arrow_left_3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 587142581F65139A0099AE86 /* ic_keyboard_arrow_left_3x.png */; };
+		5871425C1F65139A0099AE86 /* ic_keyboard_arrow_left.png in Resources */ = {isa = PBXBuildFile; fileRef = 587142591F65139A0099AE86 /* ic_keyboard_arrow_left.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +60,11 @@
 		5871424C1F64E0D40099AE86 /* ic_transform_3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ic_transform_3x.png; path = ../../../../Downloads/ic_transform_black_24dp/ios/ic_transform.imageset/ic_transform_3x.png; sourceTree = "<group>"; };
 		5871424D1F64E0D40099AE86 /* ic_transform.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ic_transform.png; path = ../../../../Downloads/ic_transform_black_24dp/ios/ic_transform.imageset/ic_transform.png; sourceTree = "<group>"; };
 		587142511F64E26B0099AE86 /* matteo-vistocco-240766.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "matteo-vistocco-240766.jpg"; path = "../../../../Downloads/matteo-vistocco-240766.jpg"; sourceTree = "<group>"; };
+		587142531F64FAA90099AE86 /* testclass1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = testclass1.swift; sourceTree = "<group>"; };
+		587142551F65100C0099AE86 /* TimerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimerViewController.swift; sourceTree = "<group>"; };
+		587142571F65139A0099AE86 /* ic_keyboard_arrow_left_2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_keyboard_arrow_left_2x.png; sourceTree = "<group>"; };
+		587142581F65139A0099AE86 /* ic_keyboard_arrow_left_3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_keyboard_arrow_left_3x.png; sourceTree = "<group>"; };
+		587142591F65139A0099AE86 /* ic_keyboard_arrow_left.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_keyboard_arrow_left.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +115,9 @@
 		5871421C1F64DB2C0099AE86 /* numberfunny */ = {
 			isa = PBXGroup;
 			children = (
+				587142571F65139A0099AE86 /* ic_keyboard_arrow_left_2x.png */,
+				587142581F65139A0099AE86 /* ic_keyboard_arrow_left_3x.png */,
+				587142591F65139A0099AE86 /* ic_keyboard_arrow_left.png */,
 				5871424B1F64E0D40099AE86 /* ic_transform_2x.png */,
 				5871424C1F64E0D40099AE86 /* ic_transform_3x.png */,
 				587142511F64E26B0099AE86 /* matteo-vistocco-240766.jpg */,
@@ -115,6 +128,8 @@
 				587142241F64DB2C0099AE86 /* Assets.xcassets */,
 				587142261F64DB2C0099AE86 /* LaunchScreen.storyboard */,
 				587142291F64DB2C0099AE86 /* Info.plist */,
+				587142531F64FAA90099AE86 /* testclass1.swift */,
+				587142551F65100C0099AE86 /* TimerViewController.swift */,
 			);
 			path = numberfunny;
 			sourceTree = "<group>";
@@ -245,9 +260,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				587142521F64E26B0099AE86 /* matteo-vistocco-240766.jpg in Resources */,
+				5871425A1F65139A0099AE86 /* ic_keyboard_arrow_left_2x.png in Resources */,
 				587142281F64DB2C0099AE86 /* LaunchScreen.storyboard in Resources */,
 				587142251F64DB2C0099AE86 /* Assets.xcassets in Resources */,
 				5871424E1F64E0D40099AE86 /* ic_transform_2x.png in Resources */,
+				5871425C1F65139A0099AE86 /* ic_keyboard_arrow_left.png in Resources */,
+				5871425B1F65139A0099AE86 /* ic_keyboard_arrow_left_3x.png in Resources */,
 				587142231F64DB2C0099AE86 /* Main.storyboard in Resources */,
 				587142501F64E0D40099AE86 /* ic_transform.png in Resources */,
 				5871424F1F64E0D40099AE86 /* ic_transform_3x.png in Resources */,
@@ -275,7 +293,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				587142561F65100C0099AE86 /* TimerViewController.swift in Sources */,
 				587142201F64DB2C0099AE86 /* ViewController.swift in Sources */,
+				587142541F64FAA90099AE86 /* testclass1.swift in Sources */,
 				5871421E1F64DB2C0099AE86 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -523,6 +543,7 @@
 				587142441F64DB2C0099AE86 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		587142451F64DB2C0099AE86 /* Build configuration list for PBXNativeTarget "numberfunnyTests" */ = {
 			isa = XCConfigurationList;
@@ -531,6 +552,7 @@
 				587142471F64DB2C0099AE86 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		587142481F64DB2C0099AE86 /* Build configuration list for PBXNativeTarget "numberfunnyUITests" */ = {
 			isa = XCConfigurationList;
@@ -539,6 +561,7 @@
 				5871424A1F64DB2C0099AE86 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
