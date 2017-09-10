@@ -10,9 +10,28 @@ import UIKit
 
 class TimerTextViewController: UIViewController {
 
+    let numberArray=[ "Zero", "One", "Two", "Three", "Four", "Five", "Six", "Seven", "Eight", "Nine" ];
+    var numberAInt: Int = 1;
     
+    var objTimer=Timer();
     
+    @IBOutlet weak var numberLabel: UILabel!
     
+    func playTime() -> Void {
+        numberAInt += 1
+        numberLabel.text=numberArray[numberAInt%10];
+    }
+    
+    @IBAction func playButton(_ sender: Any) {
+        print("Play clicked")
+        objTimer=Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(TimerViewController.playTime), userInfo: nil, repeats: true)        
+    }
+    
+    @IBAction func stopButton(_ sender: Any) {
+        print("Stop clicked")
+        objTimer.invalidate()
+        
+    }
     
     
     override func viewDidLoad() {
