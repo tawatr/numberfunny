@@ -10,6 +10,24 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--TimerTextViewController-->
+        <scene sceneID="NMw-Sc-0eV">
+            <objects>
+                <viewController title="TimerTextViewController" id="mKF-VK-ahS" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="xAF-BC-y0u"/>
+                        <viewControllerLayoutGuide type="bottom" id="z0c-EP-EXl"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="a8N-lt-4OC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TxL-hD-8fv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-758" y="36"/>
+        </scene>
         <!--HomeController-->
         <scene sceneID="tne-QT-ifu">
             <objects>
@@ -112,7 +130,11 @@
                                                 <segue destination="BYZ-38-t0r" kind="show" id="MeG-WW-4bI"/>
                                             </connections>
                                         </barButtonItem>
-                                        <barButtonItem key="rightBarButtonItem" systemItem="play" id="oaW-Gy-eO4"/>
+                                        <barButtonItem key="rightBarButtonItem" systemItem="play" id="oaW-Gy-eO4">
+                                            <connections>
+                                                <action selector="playButton:" destination="F8a-gd-LSf" id="D2Z-nu-M6F"/>
+                                            </connections>
+                                        </barButtonItem>
                                     </navigationItem>
                                 </items>
                             </navigationBar>
@@ -126,7 +148,11 @@
                                 <rect key="frame" x="0.0" y="623" width="375" height="44"/>
                                 <items>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="67S-zN-S4n"/>
-                                    <barButtonItem systemItem="stop" id="ZGf-kx-3Vi"/>
+                                    <barButtonItem systemItem="stop" id="ZGf-kx-3Vi">
+                                        <connections>
+                                            <action selector="stopButton:" destination="F8a-gd-LSf" id="g4Q-ac-q56"/>
+                                        </connections>
+                                    </barButtonItem>
                                 </items>
                             </toolbar>
                         </subviews>
@@ -147,6 +173,9 @@
                             <constraint firstItem="QNz-o1-oqg" firstAttribute="leading" secondItem="slN-9J-3sY" secondAttribute="leadingMargin" id="zN8-01-cGX"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="numberLabel" destination="QNz-o1-oqg" id="caW-P8-LN7"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LhA-Lh-Tz7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

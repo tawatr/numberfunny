@@ -23,6 +23,7 @@
 		5871425A1F65139A0099AE86 /* ic_keyboard_arrow_left_2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 587142571F65139A0099AE86 /* ic_keyboard_arrow_left_2x.png */; };
 		5871425B1F65139A0099AE86 /* ic_keyboard_arrow_left_3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 587142581F65139A0099AE86 /* ic_keyboard_arrow_left_3x.png */; };
 		5871425C1F65139A0099AE86 /* ic_keyboard_arrow_left.png in Resources */ = {isa = PBXBuildFile; fileRef = 587142591F65139A0099AE86 /* ic_keyboard_arrow_left.png */; };
+		5871425E1F6520570099AE86 /* TimerTextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5871425D1F6520570099AE86 /* TimerTextViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +66,7 @@
 		587142571F65139A0099AE86 /* ic_keyboard_arrow_left_2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_keyboard_arrow_left_2x.png; sourceTree = "<group>"; };
 		587142581F65139A0099AE86 /* ic_keyboard_arrow_left_3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_keyboard_arrow_left_3x.png; sourceTree = "<group>"; };
 		587142591F65139A0099AE86 /* ic_keyboard_arrow_left.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_keyboard_arrow_left.png; sourceTree = "<group>"; };
+		5871425D1F6520570099AE86 /* TimerTextViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimerTextViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,6 +132,7 @@
 				587142291F64DB2C0099AE86 /* Info.plist */,
 				587142531F64FAA90099AE86 /* testclass1.swift */,
 				587142551F65100C0099AE86 /* TimerViewController.swift */,
+				5871425D1F6520570099AE86 /* TimerTextViewController.swift */,
 			);
 			path = numberfunny;
 			sourceTree = "<group>";
@@ -297,6 +300,7 @@
 				587142201F64DB2C0099AE86 /* ViewController.swift in Sources */,
 				587142541F64FAA90099AE86 /* testclass1.swift in Sources */,
 				5871421E1F64DB2C0099AE86 /* AppDelegate.swift in Sources */,
+				5871425E1F6520570099AE86 /* TimerTextViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
